@@ -127,3 +127,7 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 .inspace-15{padding:15px;}
 .inspace-20{padding:20px;}
 .inspace-30{padding:30px;}
+
+/* Font awesome/iconos
+--------------------------------------------------------------------------------------------------------------- */
+#fa-euro-sign{font-size: 12px;}
