@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 html{overflow-y:scroll; overflow-x:hidden;}
 html, body{margin:0; padding:0; font-size:14px; line-height:1.6em;}
 
@@ -50,24 +49,14 @@ img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; l
 .imgover{display:inline-block; position:relative; max-width:100%;}
 .imgover::before, .imgover::after{display:block; position:absolute; content:""; text-align:center; opacity:0;}
 .imgover::before{top:0; right:0; bottom:0; left:0;}
-.imgover::after{top:50%; left:50%; width:50px; height:50px; line-height:50px; margin:-25px 0 0 -25px; font-family:"Font Awesome\ 5 Free"; font-weight:900; content:"\f067";/* fa-plus */ font-size:28px;}
+.imgover::after{top:50%; left:50%; width:50px; height:50px; line-height:50px; margin:-25px 0 0 -25px; font-family:"Font Awesome\ 5 Free"; font-weight:900; content:"\f067";/* cambiar este icono por otro que tenga sentido, ahora mismo esta puesto un signo + */ font-size:28px;}
 .imgover:hover::before, .imgover:hover::after{opacity:1;}
 
 
-/* Fonts/Fuebtes
+/* Fonts/Fuentes
 --------------------------------------------------------------------------------------------------------------- */
 body, input, textarea, select{font-family:Verdana, Geneva, sans-serif;}
 h1, h2, h3, h4, h5, h6, .heading{font-family:Georgia, "Times New Roman", Times, serif;}
-
-
-/* Forms/Formularios
---------------------------------------------------------------------------------------------------------------- */
-form, fieldset, legend{margin:0; padding:0; border:none;}
-legend{display:none;}
-label, input, textarea, select, button{display:block; resize:none; outline:none; color:inherit; font-size:inherit; font-family:inherit; vertical-align:middle;}
-label{margin-bottom:5px;}
-:required, :invalid{outline:none; box-shadow:none;}
-::placeholder{opacity:1;}/* Makes sure the placeholder text is not transparent */
 
 
 /* General
