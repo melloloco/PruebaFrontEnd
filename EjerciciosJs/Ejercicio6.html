@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejercicio6</title>
+  </head>
+  <body>
+<script language="JavaScript">
+
+function texto()
+{
+	var palabra=prompt("Escribe una cadena de texto").toLowerCase();
+ 
+	palabra=palabra.replace(/ /g, "");
+ 
+	for (var i=0;i<palabra.length;i++){
+		if(palabra[i]!=palabra[palabra.length-i-1]){
+			return false;
+		}
+	}
+	return true;
+}
+ 
+if(texto())
+{
+	alert("SI es palíndromo");
+}else{
+	alert("NO es palíndromo")
+}
+
+
+</script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejercicio5</title>
+  </head>
+  <body>
+<script language="JavaScript">
+
+let dni='';
+while(!(/^\d{8}[a-zA-Z]$/.test(dni))){
+  dni = prompt("Introduce 8 numeros y una letra");
+}
+
+//Se separan los números de la letra
+var letraDNI = dni.substring(8, 9).toUpperCase();
+var numDNI = parseInt(dni.substring(0, 8));
+
+//Se calcula la letra correspondiente al número
+var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+var letraCorrecta = letras[numDNI % 23];
+
+if(letraDNI!= letraCorrecta){
+  alert("Letra incorrecta\nTu letra debería ser: " + letraCorrecta);
+} else {
+  alert("DNI correcto");
+}
+</script>
+  </body>
+</html>
