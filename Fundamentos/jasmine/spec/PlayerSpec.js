@@ -10,7 +10,6 @@ beforeEach(function() {
 it("should be able to play a song", function() {
       player.play(song);
     expect(player.currentlyPlayingSong).toEqual(song);
-  
     expect(player).toBePlaying(song);
     });
   
@@ -22,7 +21,6 @@ describe("when song has been paused", function() {
   
 it("should indicate that the song is currently paused", function() {
     expect(player.isPlaying).toBeFalsy();
-  
     expect(player).not.toBePlaying(song);
     });
   
@@ -35,17 +33,14 @@ it("should be possible to resume", function() {
   
 it("tells the current song if the user has made it a favorite", function() {
     spyOn(song, 'persistFavoriteStatus');
-  
       player.play(song);
       player.makeFavorite();
-  
     expect(song.persistFavoriteStatus).toHaveBeenCalledWith(true);
 });
   
 describe("#resume", function() {
     it("should throw an exception if song is already playing", function() {
         player.play(song);
-  
     expect(function() {
           player.resume();
     }).toThrowError("song is already playing");
