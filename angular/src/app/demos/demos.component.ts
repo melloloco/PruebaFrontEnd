@@ -80,7 +80,7 @@ export class DemosComponent implements OnInit, OnDestroy {
   ];
   idioma = this.idiomas[0].codigo;
   calculos: any[] = [];
-  valCalculadora = 444;
+  valCalculadora = 666;
 
   ponResultado(origen: string, valor: any) {
     this.calculos.push({
